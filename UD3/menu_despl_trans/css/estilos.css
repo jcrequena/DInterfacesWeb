@@ -15,7 +15,7 @@ nav li ul {
   width:100px;
   text-align: center;
   left:50%;
-  margin-left: 50px;
+  margin-left: -50px;
   top:25px;
   font:Verdana;
   font-size: 0.7em;
@@ -25,15 +25,15 @@ nav li ul {
   -webkit-transition: height 0.4s linear;
   -moz-transition: height 0.4s linear;
   -o-transition: height 0.4s linear;
-  transition:height 0.4s linear;
+  transition: height 0.4s linear;
 }
 nav li:hover ul { height:200px; }
 
 nav li ul li { background-color: #313131; }
-nav li ul li:nthchild(odd) { background-color: #363636; }
+nav li ul li:nth-child(odd) { background-color: #363636; }
 nav li ul li:hover { background-color: #444; }
 
-nav li ul li:firstchild
+nav li ul li:first-child
 {
   border-radius: 3px 3px 0 0;
   margin-top: 25px;
@@ -44,7 +44,7 @@ nav li ul li:last-child
   border-bottom-left-radius: 3px;
   border-bottom-right-radius:3px;
 }
-nav li ul li:firstchild:before
+nav li ul li:first-child:before
 {
   content:'';
   position:absolute;
@@ -53,8 +53,8 @@ nav li ul li:firstchild:before
   border:5px solid transparent;
   border-bottom-color: #313131;
   left:50%;
-  top:10px;
-  margin-left: 5px;
+  top:-10px;
+  margin-left: -5px;
 }
 nav li ul li a
 {
