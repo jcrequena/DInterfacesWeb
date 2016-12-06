@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html><head><title>Evento</title><meta charset="UTF-8">
+<style> body {text-align:center;} </style>
+<script type= "text/javascript"  src="https://code.jquery.com/jquery-3.1.1.min.js"> </script>
+<script type="text/javascript"> 
+
+function manejadorOFF() {
+	$("#i1").attr('src','lamp_off.jpg');
+}
+function manejadorON() {
+	$("#i1").attr('src','lamp_on.jpg');
+}
+ $(function(){ 
+	$("#i1").on('dblclick',manejadorOFF);
+
+    $("#i1").on('click',manejadorON);
+  });
+
+</script>
+</head>   <!-- El arbol DOM debe estar construido al ocurrir onload -->
+<body>
+  <h1>Eventos</h1>
+  <img src="lamp_off.jpg" id="i1"/>
+</body>
+</html>
