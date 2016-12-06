@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tabs - funcionalidad básica</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">HTML5</a></li>
+    <li><a href="#tabs-2">CSS3</a></li>
+    <li><a href="#tabs-3">JavaScript</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Veremos los nuevos elementos estructurales, así como los nuevos elementos existentes para formularios, audio y vídeo. El nuevo elemento canvas nos abre un mundo de posibilidades en el desarrollo de vídeojuegos web.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Mejoraremos nuestros diseños web utilizando las nuevas características de CSS3: efectos, transformaciones, animaciones, etc. Con CSS3 nuestros diseños serán más simples, pero no menos impactantes.</p>
+  </div>
+  <div id="tabs-3">
+    <p> Junto con HTML5 aparecen nuevas API javascript que nos aportan multitud de facilidades y posibilidades en el desarrollo de nuestros proyectos web. Con las nuevas API javascript nuestras manos dejarán de estar atadas.</p>
+  </div>
+</div>
+
+</body>
+</html>
